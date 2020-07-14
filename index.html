@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" />
+  <title>Calculator</title>
+</head>
+<body>
+  <div id="wrap">
+    <div>
+      <input id="screen" value=""/>
+    </div>
+    <div id="shiftdiv"><input type="button" id="shift" value="SHIFT" onclick="changeVal()"/></div>
+    <div id="inputs">
+      <div id="numbers">
+        <input type="button" onclick="getNum(this.value)" id="sin" value="sin" />
+        <input type="button" id="del" value="DEL" onclick="del()"/>
+        <input onclick="getNum(this.value)" type="button" id="point" value="." />
+        <input onclick="getNum(this.value)" type="button" id="bracket1" value="(" />
+        <input type="button" value=")" id="bracket2" onclick="getNum(this.value)"/>
+        
+        <input type="button" id="cos" value="cos" onclick="getNum(this.value)"/>
+        <input type="button" onclick="getNum(this.value)" value="7">
+        <input type="button" onclick="getNum(this.value)" value="8">
+        <input type="button" onclick="getNum(this.value)" value="9">
+        
+        <input onclick="getNum(this.value)" type="button" id="plus" value="+" />
+        
+        <input type="button" value="tan" id="tan" onclick="getNum(this.value)"/>
+        <input type="button" onclick="getNum(this.value)" value="4">
+        <input type="button" onclick="getNum(this.value)" value="5">
+        <input type="button" onclick="getNum(this.value)" value="6">
+        
+        <input onclick="getNum(this.value)" type="button" id="minus" value="-" />
+        
+        <input type="button" id="log" value="log" onclick="getNum(this.value)"/>
+        <input type="button" onclick="getNum(this.value)" value="1">
+        <input type="button" onclick="getNum(this.value)" value="2">
+        <input type="button" onclick="getNum(this.value)" value="3">
+        
+        <input onclick="getNum(this.value)" type="button" id="multiply" value="*" />
+        <input type="button" id="sqrt" value="√(" onclick="getNum(this.value)"/>
+        <input onclick="equal()" type="button" id="equal" value="=" />
+        <input type="button" onclick="getNum(this.value)" value="0">
+        <input type="button" id="ac" value="AC" onclick="clearScreen()"/>
+        <input onclick="getNum(this.value)" type="button" id="divide" value="/" />
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

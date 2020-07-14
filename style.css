@@ -1,0 +1,87 @@
+#wrap * {
+  display: grid;
+}
+#wrap {
+  min-width: 350px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+body{
+  background-color: #d8dfe1;
+}
+
+input {
+  outline:none;
+}
+#numbers {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#shiftdiv {
+  width: 20%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%,0);
+  position: relative;
+  margin: 20px 0;
+  text-align: center;
+}
+#shift {
+  height: 40px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+}
+#numbers * {
+  font-size: 25px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding: 5px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+}
+#sin,#cos,#tan,#log,#del,#ac{
+  font-size: 20px;
+}
+
+#screen{
+  border-radius:10px;
+  background-color: #fff;
+  border: none;
+  padding: 20px 10px;
+  width: 93%;
+  margin: auto;
+  margin-bottom: 0;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+#ac, #equal, #plus, #minus,#divide,#multiply,#sin,#cos,#tan,#log,#sqrt,#shift{
+  box-sizing: border-box;
+  background-color: #15fe99;
+  padding: 5px;
+  color: #000;
+}
+#sin, #cos, #tan, #log,#sqrt,#shift {
+  display: none;
+}
+
+#numbers *:hover,#shift:hover{
+    border:2px black solid;
+}
+
+@media only screen and (min-width:720px){
+  #numbers {
+    margin-top: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  #sin,#cos,#tan,#log,#sqrt,#shift{
+    display: block;
+  }
+}
